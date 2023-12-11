@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção e boas praticas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="backup.css">
+    <link rel="icon" href="imagens/favicon.png">
+
+</head>
+
+<body>
+    <nav>
+        <img class="logo" src="imagens/logo.png.png.png" alt="">
+
+        <div class="menu-btn">
+            <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+        </div>
+
+        <ul class="jadson">
+            <li> <a href="index.html" class="active"> Inicio </a></li>
+            <li> <a href="conteudo.html"> Conteúdos</a> </li>
+            <li> <a href="suporte.html"> Suporte</a> </li>
+            <li> <a href="sobre.html"> Sobre </a> </li>
+        </ul>
+    </nav>
+
+    <br><br><br>
+
+    <h1 class="titulo"> Backup em Aparelhos</h1>
+    <hr a class="quebrat">
+
+    <br><br><br><br>
+
+    <h2 a class="subtitulo"><b> O que é Backup?</b></h2>
+
+    <br>
+
+    <p><mark> O backup é quando você pega uma informação e guarda ela em um lugar seguro. Vamos pegar o WhatsApp como exemplo,
+        ele faz o backup diário, programado de forma padrão para que realize por volta de duas horas da manhã, então
+        todos os dias nesse mesmo horário ele realizara automaticamente o backup de todas as suas conversas, pegando-as
+        e guardando em um lugar seguro. Então é isso que é o backup, guardar o arquivo em local seguro onde pode ser
+        recuperado caso venha a perde. Outro</mark> exemplo, no computador uma pessoa tem várias fotos, então ela pega essas
+        fotos e guarda em um pendrive, muita gente faz isso porque quer armanezar em lugar seguro e isto é uma forma
+        manual de um backup. Tudo isso significa que você faz um ato para guardar em segurança algum arquivo.</p>
+    <br>
+
+
+    <br><br>
+    <hr a class="quebrac">
+    <br><br>
+
+    <h2 a class="subtitulo"><b>Passo a passo de como fazer backup no pc (Windows)</b></h2>
+
+    <br>
+
+    <p>
+    <ol class="lista">
+        <li>Em seu computador, faça download e instale o Google Drive.</li>
+        <li>Faça o login na sua Conta do Google.</li>
+        <li>Vá e selecione as pastas ou imagens que você quer armazenar para fazer o backup.</li>
+        <li>Clique em “concluído” ou ”salvar”.</li>
+    </ol>
+    </p>
+    <br>
+
+    <div a class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/V59r8P4ahJ8" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+    <br><br>
+    <hr a class="quebrac">
+    <br><br>
+
+
+    <h2 a class="subtitulo"><b>Passo a passo de como fazer backup no Iphone</b></h2>
+
+    <br>
+
+    <p>
+
+    <ol class="lista">
+        <li>Abra a página de “Ajustes” e depois vá na opção (seu nome), pois lá terá a página do iCloud > Backup do
+            iCloud.</li>
+        <li>Ative o “Backup do iCloud”. O iCloud irá fazer o backup do iPhone de forma automática todos os dias que o
+            iPhone estiver conectado à<br>alimentação, bloqueado e conectado à uma rede Wi-Fi.</li>
+        <li>Caso você prefira fazer um Backup manual, clique em Fazer Backup Agora.</li>
+    </ol>
+
+    </p>
+    <br>
+
+    <div a class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xUs_-6SFj5A" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+    <br><br>
+    <hr a class="quebrac">
+    <br><br>
+    <h2 a class="subtitulo"><b>Passo a passo para fazer backup pelo celular “Android”</b></h2>
+    <p>
+    <ol class="lista">
+        <li>Abra as Configurações de seu smartphone (Android).</li>
+        <li>Faça o login na sua Conta do Google.</li>
+        <li>Clique no Google e vá em Backup. Caso essas etapas não corresponderem às configurações de seu smartphone,
+            pesquise a opção <br> backup no app de configurações de </li>
+        <li>seu dispositivo.Selecione a opção de Fazer backup agora.</li>
+    </ol>
+    </p>
+    <br>
+
+    <div a class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bKL_iqQKHzU" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+    <br>
+
+
+
+
+    <div id="btnTop">
+        <i class="arrow up"></i>
+    </div>
+
+
+    <script src="main.js"></script>
+
+    <script>
+        const btn = document.getElementById("btnTop")
+
+        btn.addEventListener("click", function () {
+            window.scrollTo(0, 0)
+        })
+
+        document.addEventListener('scroll', ocultar)
+
+        function ocultar() {
+            if (window.scrollY > 10) {
+                btn.style.display = "flex"
+            } else {
+                btn.style.display = "none"
+            }
+        }
+
+        ocultar()
+    </script>
+
+
+</body>
+
+</html>

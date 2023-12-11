@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+
+* {
+    margin-left: 0;
+    margin-right: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Fira Sans Condensed', sans-serif; */
+}
+
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #e4ebf0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+
+/* nav .logo{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-weight: 600;
+}  */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* nav ul li a.active,
+nav ul li a:hover{
+    background: #bdd1de;
+} */
+
+nav .menu-btn i {
+    color: #bdd1de;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 920px) {
+    nav .menu-btn i {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #bdd1de;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+
+    }
+
+    nav ul.open {
+        left: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    nav ul li a {
+        font-size: 23px;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+        background: none;
+        color: #ffffff;
+    }
+}
+
+h1 {
+    font-size: 350%;
+    text-align: center;
+}
+
+p {
+    position: relative;
+    font-size: 113%;
+    margin-left: 3%;
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    margin: 0 px auto;
+    text-align: left;
+    position: relative;
+    left: 0%;
+    width: 12%;
+}
+
+.subtitulo {
+    font-size: 156%;
+    /* margin-left: 6%; */
+    position: relative;
+    color: #505050;
+    text-align: center;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+.titulo {
+    font-size: 58px;
+    text-align: center;
+}
+
+/* linha que quebra o titulo */
+.quebrat {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 277px;
+    margin-right: 277px;
+    border-style: inset;
+    border-width: 1px;
+}
+
+h4 {
+    text-indent: 3%;
+    text-align: left;
+    font-size: 113%;
+}
+
+.btn-link {
+    text-decoration: none;
+    border-radius: 8px;
+    /* border: 1px solid #000; */
+    width: 140px;
+    text-align: center;
+    padding: 7px;
+    font-size: 15px;
+    background-color: #0072c4;
+    /* box-shadow: 2px 2px 2px #000; */
+    color: #fff;
+}
+
+/* linha que quebra os conteudos */
+.quebrac {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-style: inset;
+    border-width: 1px;
+}
+
+
+.jadson {
+    z-index: 9;
+}
+
+h6 {
+    font-size: 150%;
+    text-align: center;
+}
+
+#btnTop {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 122, 223, 0.5);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrow {
+    border: solid #ffffff;
+    border-width: 0 7px 7px 0;
+    padding: 5px;
+    display: inline-block;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.tress {
+    width: 80%;
+    height: 80%;
+    right: -10%;
+    align-items: center;
+    position: relative;
+}
+
+@media (max-width: 920px) {
+    .logo {
+        display: block;
+        margin: 0 px auto;
+        text-align: left;
+        position: relative;
+        left: -23%;
+        width: 150px;
+    }
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista {
+    right: -30%;
+    align-items: center;
+    position: relative;
+}
+
+h7 {
+    text-indent: 5%;
+    font-size: 100%;
+}
+
+mark {
+    background-color: rgb(206, 205, 205);
+}

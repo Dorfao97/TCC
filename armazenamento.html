@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção e boas praticas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="armazenamento.css">
+    <link rel="icon" href="imagens/favicon.png">
+
+</head>
+
+<body>
+    <nav>
+        <img class="logo" src="imagens/logo.png.png.png" alt="">
+
+        <div class="menu-btn">
+            <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+        </div>
+
+        <ul class="jadson">
+            <li> <a href="index.html" class="active"> Inicio </a></li>
+            <li> <a href="conteudo.html"> Conteúdos</a> </li>
+            <li> <a href="suporte.html"> Suporte</a> </li>
+            <li> <a href="sobre.html"> Sobre </a> </li>
+        </ul>
+    </nav>
+
+    <br><br><br>
+
+    <h1 class="titulo"> Armazenamento em Nuvem</h1>
+    <hr a class="quebrat">
+
+    <br><br><br><br>
+
+    <h2 a class="subtitulo"><b>Explicação do Armazenamento em Nuvem</b></h2>
+
+    <br>
+
+    <p><mark>
+        Um tipo de computação em nuvem chamado "cloud computing" armazena dados na Internet por meio de um provedor de
+        computação em nuvem que gerencia e executa o "armazenamento físico de dados" como um serviço. O serviço é
+        prestado sob demanda, com capacidade e custos just-in-time, e elimina a necessidade de o cliente adquirir e
+        gerenciar sua própria infraestrutura física de armazenamento de dados. Como resultado, você adquire
+        flexibilidade, escala global e resiliência enquanto tem acesso aos</mark> dados "a qualquer hora, em qualquer lugar".
+        A capacidade de armazenar dados em um servidor online é obtida de um provedor externo de serviços de nuvem que
+        também fornece capacidade de armazenamento via Internet com um modelo de preços de pagamento conforme o uso.
+        Esses provedores de armazenamento no espaço fornecem a capacidade, a segurança e a resiliência necessárias para
+        tornar os dados acessíveis a aplicativos em qualquer lugar do mundo.
+        Os aplicativos usam diretamente uma API ou protocolo de armazenamento tradicional para acessar o armazenamento
+        na nuvem. Vários fornecedores fornecem serviços complementares projetados para auxiliar na coleta,
+        gerenciamento, proteção e análise de grandes quantidades de dados.
+
+        <br><br>
+
+    </p>
+
+    <div a class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/okTe0te1Sz0" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+    <br>
+    <br>
+
+
+
+
+
+
+    <div id="btnTop">
+        <i class="arrow up"></i>
+    </div>
+
+
+    <script src="main.js"></script>
+
+
+    <script>
+        const btn = document.getElementById("btnTop")
+
+        btn.addEventListener("click", function () {
+            window.scrollTo(0, 0)
+        })
+
+        document.addEventListener('scroll', ocultar)
+
+        function ocultar() {
+            if (window.scrollY > 10) {
+                btn.style.display = "flex"
+            } else {
+                btn.style.display = "none"
+            }
+        }
+
+        ocultar()
+    </script>
+
+</body>
+
+</html>

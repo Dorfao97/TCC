@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Fira Sans Condensed', sans-serif; */
+}
+
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #e4ebf0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+
+/* nav .logo{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-weight: 600;
+}  */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* nav ul li a.active,
+nav ul li a:hover{
+    background: #bdd1de;
+} */
+
+nav .menu-btn i {
+    color: #bdd1de;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 920px) {
+    nav .menu-btn i {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #bdd1de;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+
+    }
+
+    nav ul.open {
+        left: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    nav ul li a {
+        font-size: 23px;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+        background: none;
+        color: #ffffff;
+    }
+}
+
+.titulo {
+    font-size: 58px;
+    text-align: center;
+}
+
+p {
+    font-size: x-large;
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    margin: 0 px auto;
+    text-align: left;
+    position: relative;
+    left: 0%;
+    width: 12%;
+}
+
+h2 {
+    font-size: x-large;
+    text-align: center;
+}
+
+.btn-link {
+    text-decoration: none;
+    border-radius: 8px;
+    /* border: 1px solid #000; */
+    width: 140px;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #0072c4;
+    /* box-shadow: 2px 2px 2px #000; */
+    color: #fff;
+}
+
+.jadson {
+    z-index: 9;
+}
+
+h3 {
+    font-size: x-large;
+    text-align: center;
+    margin-right: 0%;
+    margin-left: 0%;
+}
+
+.card-group,
+.subtitulo {
+    text-align: center;
+    font-size: x-large;
+}
+
+p {
+    font-size: medium;
+}
+
+h5 {
+    text-align: center;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    /*   width: 100vw; */
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h6 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: aqua;
+}
+
+.footer-bottom {
+    background: #000;
+    /* width: 100vw; */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media (max-width: 920px) {
+    .logo {
+        display: block;
+        margin: 0 px auto;
+        text-align: left;
+        position: relative;
+        left: -23%;
+        width: 150px;
+    }
+}
